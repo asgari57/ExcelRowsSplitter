@@ -140,7 +140,8 @@ namespace WindowsFormsApp1
             progressBar1.Maximum = rowCount;
             progressBar1.Step = 1;
 
-          //  int r = 0;
+            int r = 0;
+            r = c;
             for (int x = 1; x <= colCount; x++)
             {
                 xlWorkSheet2.Cells[1, x] = xlWorksheet.Cells[1, x];
@@ -162,14 +163,14 @@ namespace WindowsFormsApp1
                 }
                 if (i == c && c <= rowCount)
                 {
-                    // r = 0;
+                     
                     cc = c;
-                    c = c + c;
+                    c = c + r;
 
                     
                     
                     nfile += 1;
-                    xlWorkBook2.SaveAs(txtSave.Text + "\\split" + nfile + ".xlsx", Excel.XlFileFormat.xlWorkbookDefault, misValue, misValue, misValue, misValue, Excel.XlSaveAsAccessMode.xlExclusive, misValue, misValue, misValue, misValue, misValue);
+                    xlWorkBook2.SaveAs(txtSave.Text + "\\SplitedFile" + nfile + ".xlsx", Excel.XlFileFormat.xlWorkbookDefault, misValue, misValue, misValue, misValue, Excel.XlSaveAsAccessMode.xlExclusive, misValue, misValue, misValue, misValue, misValue);
                     xlWorkBook2.Close(true, misValue, misValue);
                     xlWorkBook2 = xlApp.Workbooks.Add(misValue);
                     xlWorkSheet2 = (Excel.Worksheet)xlWorkBook2.Worksheets.get_Item(1);
