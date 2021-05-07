@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,11 +55,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(509, 10);
+            this.button1.Location = new System.Drawing.Point(403, 10);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 34);
+            this.button1.Size = new System.Drawing.Size(88, 34);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Open";
+            this.button1.Text = "1. Open";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -76,14 +77,14 @@
             // 
             this.txtFile.Location = new System.Drawing.Point(89, 16);
             this.txtFile.Name = "txtFile";
-            this.txtFile.Size = new System.Drawing.Size(387, 22);
+            this.txtFile.Size = new System.Drawing.Size(296, 22);
             this.txtFile.TabIndex = 2;
             // 
             // txtSave
             // 
             this.txtSave.Location = new System.Drawing.Point(89, 214);
             this.txtSave.Name = "txtSave";
-            this.txtSave.Size = new System.Drawing.Size(387, 22);
+            this.txtSave.Size = new System.Drawing.Size(296, 22);
             this.txtSave.TabIndex = 5;
             this.txtSave.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -99,18 +100,18 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(509, 208);
+            this.button2.Location = new System.Drawing.Point(403, 208);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 34);
+            this.button2.Size = new System.Drawing.Size(88, 34);
             this.button2.TabIndex = 3;
-            this.button2.Text = "Select";
+            this.button2.Text = "3. Select";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(86, 86);
+            this.label3.Location = new System.Drawing.Point(76, 83);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 17);
             this.label3.TabIndex = 6;
@@ -118,18 +119,18 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(197, 259);
+            this.button3.Location = new System.Drawing.Point(164, 252);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 34);
+            this.button3.Size = new System.Drawing.Size(171, 34);
             this.button3.TabIndex = 7;
-            this.button3.Text = "Separate to multiple Files";
+            this.button3.Text = "4. Separate to multiple Files";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // nRows
             // 
             this.nRows.AutoSize = true;
-            this.nRows.Location = new System.Drawing.Point(134, 86);
+            this.nRows.Location = new System.Drawing.Point(124, 83);
             this.nRows.Name = "nRows";
             this.nRows.Size = new System.Drawing.Size(31, 17);
             this.nRows.TabIndex = 8;
@@ -138,7 +139,7 @@
             // nCoulmn
             // 
             this.nCoulmn.AutoSize = true;
-            this.nCoulmn.Location = new System.Drawing.Point(414, 86);
+            this.nCoulmn.Location = new System.Drawing.Point(404, 83);
             this.nCoulmn.Name = "nCoulmn";
             this.nCoulmn.Size = new System.Drawing.Size(31, 17);
             this.nCoulmn.TabIndex = 10;
@@ -147,7 +148,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(353, 86);
+            this.label6.Location = new System.Drawing.Point(343, 83);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(55, 17);
             this.label6.TabIndex = 9;
@@ -155,26 +156,26 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(211, 44);
+            this.button4.Location = new System.Drawing.Point(164, 44);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(171, 34);
             this.button4.TabIndex = 11;
-            this.button4.Text = "Check file";
+            this.button4.Text = "2. Check file";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 157);
+            this.label7.Location = new System.Drawing.Point(12, 132);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(193, 17);
+            this.label7.Size = new System.Drawing.Size(266, 17);
             this.label7.TabIndex = 12;
-            this.label7.Text = "How many rows in each files?";
+            this.label7.Text = "How many rows do you want in each file?";
             // 
             // txtRows
             // 
-            this.txtRows.Location = new System.Drawing.Point(211, 154);
+            this.txtRows.Location = new System.Drawing.Point(284, 129);
             this.txtRows.Name = "txtRows";
             this.txtRows.Size = new System.Drawing.Size(84, 22);
             this.txtRows.TabIndex = 18;
@@ -189,18 +190,18 @@
             // 
             this.progressBar1.Location = new System.Drawing.Point(12, 331);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(566, 25);
+            this.progressBar1.Size = new System.Drawing.Size(466, 25);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 19;
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(356, 155);
+            this.checkBox1.Location = new System.Drawing.Point(15, 167);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(186, 21);
+            this.checkBox1.Size = new System.Drawing.Size(324, 21);
             this.checkBox1.TabIndex = 20;
-            this.checkBox1.Text = "is your file have header?";
+            this.checkBox1.Text = "Do you want to set the first row as the header?";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // timer1
@@ -221,7 +222,7 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.LinkVisited = true;
-            this.linkLabel1.Location = new System.Drawing.Point(203, 306);
+            this.linkLabel1.Location = new System.Drawing.Point(161, 301);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(179, 17);
             this.linkLabel1.TabIndex = 22;
@@ -233,7 +234,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(593, 368);
+            this.ClientSize = new System.Drawing.Size(503, 368);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.lblTimer);
             this.Controls.Add(this.checkBox1);
@@ -253,8 +254,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Excel file spliter";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

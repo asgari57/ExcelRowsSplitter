@@ -185,7 +185,7 @@ namespace WindowsFormsApp1
             }
 
             nfile += 1;
-            xlWorkBook2.SaveAs(txtSave.Text + "\\split" + nfile + ".xlsx", Excel.XlFileFormat.xlWorkbookDefault, misValue, misValue, misValue, misValue, Excel.XlSaveAsAccessMode.xlExclusive, misValue, misValue, misValue, misValue, misValue);
+            xlWorkBook2.SaveAs(txtSave.Text + "\\SplitedFile" + nfile + ".xlsx", Excel.XlFileFormat.xlWorkbookDefault, misValue, misValue, misValue, misValue, Excel.XlSaveAsAccessMode.xlExclusive, misValue, misValue, misValue, misValue, misValue);
             xlWorkBook2.Close(true, misValue, misValue);
             Marshal.ReleaseComObject(xlWorkSheet2);
             Marshal.ReleaseComObject(xlWorkBook2);
