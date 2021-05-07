@@ -119,12 +119,13 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(164, 252);
+            this.button3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button3.Location = new System.Drawing.Point(150, 242);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(171, 34);
+            this.button3.Size = new System.Drawing.Size(204, 34);
             this.button3.TabIndex = 7;
             this.button3.Text = "4. Separate to multiple Files";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // nRows
@@ -222,7 +223,7 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.LinkVisited = true;
-            this.linkLabel1.Location = new System.Drawing.Point(161, 301);
+            this.linkLabel1.Location = new System.Drawing.Point(160, 294);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(179, 17);
             this.linkLabel1.TabIndex = 22;
